@@ -1,0 +1,13 @@
+Week # 1:
+*Loading screen developed.
+*Menu Screen interface is developed.
+*Currently dummy data is entered in Menu screen for stages.
+*Gameplay screen is added.
+*Customized theme color selected.
+
+Week # 2:
+*Json formate is used in application.
+*Player data stored in external file with player.json name in json formate.
+*New player create screen is added.
+*Stages data read is under process.
+*Data read through json parssing for stages data is done.
