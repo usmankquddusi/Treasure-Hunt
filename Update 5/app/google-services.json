@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1068162083723",
+    "firebase_url": "https://university-treasure-hunt.firebaseio.com",
+    "project_id": "university-treasure-hunt",
+    "storage_bucket": "university-treasure-hunt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068162083723:android:5e1ce706888f4945",
+        "android_client_info": {
+          "package_name": "com.usman.treasurehuntgame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068162083723-8h74f1l7p93u5ov4n8aabjf25g468rst.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAjlf4mO5XEFFiggIlIIOxz273eQQ6q40"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
