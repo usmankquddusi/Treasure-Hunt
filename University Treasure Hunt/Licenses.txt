@@ -1,0 +1,2 @@
+* Animation json files under public license downloaded from https://www.lottiefiles.com/
+* Button images used from www.clipart.com under Apache licence for public use.

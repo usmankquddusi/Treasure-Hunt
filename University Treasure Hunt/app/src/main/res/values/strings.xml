@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">University Treasure Hunt</string>
+    <string name="action_settings">Settings</string>
+    <string name="player_data">player</string>
+    <string name="stages_folder">stages</string>
+
+</resources>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Bungee-master-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.Binary-Finery/Bungee/master-SNAPSHOT/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.Binary-Finery/Bungee/master-SNAPSHOT/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

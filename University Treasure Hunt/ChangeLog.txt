@@ -1,0 +1,43 @@
+Week # 1:
+*[20/03/2018] Loading screen developed.
+*[22/03/2018] Menu Screen interface is developed.
+*[23/03/2018] Currently dummy data is entered in Menu screen for stages.
+*[24/03/2018] Gameplay screen is added.
+*[24/03/2018] Customized theme color selected.
+[Usman Quddusi]
+
+
+Week # 2:
+* [26/03/2018] Json formate is used in application.
+* [27/03/2018-28/03/2018] Player data stored in external file with player.json name in json formate.
+* [29/03/2018] New player create screen is added.
+* [30/03/2018] Stages data read is under process.
+[Usman Quddusi]
+
+
+Week # 3:
+* [03/04/2018] Icon designed
+* [05/04/2018] Data read through json parsing for stages data is done.
+* [06/04/2018] Updated loading screen
+* [08/04/2018] Demo stage added in application folder
+[Usman Quddusi]
+
+Week # 4:
+* [9/04/2018] Interface change
+* [12/04/2018-13/04/2018] New animations for games
+* [14/04/2018-15/04/2018] Firebase working
+[Usman Quddusi]
+
+
+Week # 5:
+* [16/04/2018] Firebase Successfully added in project.
+* [18/04/2018-19/04/2018] Player data present in local json file is synchronizing with firebase database
+* [21/04/2018] UI improvements
+[Usman Quddusi]
+
+Week # 6:
+* [24/04/2018] Menu Screen addition.
+* [25/04/2018] Scoreboard implementation layout
+* [27/04/2018-28/04/2018] Players scoreboard sycncronization
+* [28/04/2018] Firebase Users record updation
+[Usman Quddusi]

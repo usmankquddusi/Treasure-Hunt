@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="E:\WORKING\ANDROID\AS_Projects\PROJECTS\University Treasure Hunt\app\build\intermediates\exploded-aar\com.github.Binary-Finery\Bungee\master-SNAPSHOT\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="decf1a9d36566988e0e64b5b806ec962112ffd09">
+        <dex dex="E:\WORKING\ANDROID\AS_Projects\PROJECTS\University Treasure Hunt\app\build\intermediates\pre-dexed\debug\com.github.Binary-Finery-Bungee-master-SNAPSHOT_0a0775d2265650bacdf1b11d36554da53cf6912e.jar" />
+    </item>
+
+</items>
