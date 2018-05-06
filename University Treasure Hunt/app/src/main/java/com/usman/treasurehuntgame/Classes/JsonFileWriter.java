@@ -7,7 +7,6 @@ import android.widget.Toast;
 
 import com.usman.treasurehuntgame.R;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedWriter;
@@ -28,16 +27,16 @@ public class JsonFileWriter extends JSONObject {
 
 
 
-    public boolean writePlayerObjectFile (String name) {
+    public boolean writePlayerObjectFile (String json_data) {
 
-        JSONObject obj = new JSONObject() ;
-        try {
-            obj.put("name", name);
-            obj.put("age", "22");
-            obj.put("score", "0");
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+//        JSONObject obj = new JSONObject() ;
+//        try {
+//            obj.put("name", name);
+//            obj.put("age", "22");
+//            obj.put("score", "0");
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
 
         try {
             Writer output = null;
@@ -54,7 +53,7 @@ public class JsonFileWriter extends JSONObject {
             File file = new File(path +"/",fileName + ".json");
 
             output = new BufferedWriter(new FileWriter(file));
-            output.write(obj.toString());
+            output.write(json_data);
             output.close();
             Log.d(TAG, "writePlayerObjectFile: path="+path);
             Log.d(TAG, "writePlayerObjectFile: Player file saved successfully");

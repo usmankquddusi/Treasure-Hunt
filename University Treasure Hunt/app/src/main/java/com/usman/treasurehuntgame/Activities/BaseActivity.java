@@ -1,7 +1,10 @@
 package com.usman.treasurehuntgame.Activities;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -23,6 +26,7 @@ public class BaseActivity extends AppCompatActivity {
     private static final String TAG = " BaseActivity";
     FirebaseHandler firebaseHandle;
     JsonFileReader jsonFileReader;
+    BroadcastReceiver broadCastReceiver;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,7 +58,9 @@ public class BaseActivity extends AppCompatActivity {
         }else{
             try {
                 Log.d(TAG, "checkPlayerDataPresent: reading player data from file");
-                jsonFileReader.readPlayerDataFromFile();
+                StaticVariables.myName = jsonFileReader.readPlayerDataFromFile().getString("name");
+                StaticVariables.myScore = Integer.parseInt(jsonFileReader.readPlayerDataFromFile().getString("score"));
+
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -67,4 +73,16 @@ public class BaseActivity extends AppCompatActivity {
             Log.d(TAG, "syncPlayerDataInFirebase: ");
         }
     }
+
+    public Boolean isInternetConnected(){
+        ConnectivityManager cm =
+                (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+        boolean isConnected = activeNetwork != null &&
+                activeNetwork.isConnectedOrConnecting();
+
+        return isConnected;
+    }
+
 }

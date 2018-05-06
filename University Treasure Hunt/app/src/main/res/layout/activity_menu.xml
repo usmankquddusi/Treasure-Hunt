@@ -24,8 +24,9 @@
     </FrameLayout>
 
     <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="280dp"
-        android:layout_height="150dp"
+        android:layout_height="200dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:background="@drawable/small_bg"
@@ -42,14 +43,19 @@
             android:id="@+id/score_game_imageview_menu"
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:layout_gravity="bottom"
+            android:layout_gravity="bottom|center_horizontal"
             app:srcCompat="@drawable/score_btn" />
 
-        <ImageView
-            android:id="@+id/settings_game_imageview_menu"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_gravity="bottom|right"
-            app:srcCompat="@drawable/setting_btn" />
     </FrameLayout>
+
+    <TextView
+        android:id="@+id/score_tv_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:text="Score:"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 </RelativeLayout>

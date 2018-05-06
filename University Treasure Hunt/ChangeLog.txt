@@ -41,3 +41,12 @@ Week # 6:
 * [27/04/2018-28/04/2018] Players scoreboard sycncronization
 * [28/04/2018] Firebase Users record updation
 [Usman Quddusi]
+
+Week # 7
+* [01/05/2018] Added stages data
+* [02/05/2018] Finalized Application interface.
+* [04/05/2018] Synchronized all the data available offline with firebase.
+* [04/05/2018] Added firebase storage function to add new stages from server.
+* [05/05/2018] Add Total score and individual progress in each stage.
+* [06/05/2018] Removed bugs
+[Usman Quddusi]

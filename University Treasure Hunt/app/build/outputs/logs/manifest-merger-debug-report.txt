@@ -80,18 +80,6 @@ MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\sibghat\
 		ADDED from E:\WORKING\ANDROID\AS_Projects\PROJECTS\University Treasure Hunt\app\src\main\AndroidManifest.xml:12:9-43
 	android:theme
 		ADDED from E:\WORKING\ANDROID\AS_Projects\PROJECTS\University Treasure Hunt\app\src\main\AndroidManifest.xml:15:9-52
-receiver#com.usman.treasurehuntgame.Classes.CheckConnectivity
-ADDED from E:\WORKING\ANDROID\AS_Projects\PROJECTS\University Treasure Hunt\app\src\main\AndroidManifest.xml:16:9-22:20
-	android:exported
-		ADDED from E:\WORKING\ANDROID\AS_Projects\PROJECTS\University Treasure Hunt\app\src\main\AndroidManifest.xml:18:13-37
-	android:name
-		ADDED from E:\WORKING\ANDROID\AS_Projects\PROJECTS\University Treasure Hunt\app\src\main\AndroidManifest.xml:17:13-54
-intent-filter#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from E:\WORKING\ANDROID\AS_Projects\PROJECTS\University Treasure Hunt\app\src\main\AndroidManifest.xml:19:13-21:29
-action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from E:\WORKING\ANDROID\AS_Projects\PROJECTS\University Treasure Hunt\app\src\main\AndroidManifest.xml:20:17-79
-	android:name
-		ADDED from E:\WORKING\ANDROID\AS_Projects\PROJECTS\University Treasure Hunt\app\src\main\AndroidManifest.xml:20:25-76
 activity#com.usman.treasurehuntgame.Activities.MainActivity
 ADDED from E:\WORKING\ANDROID\AS_Projects\PROJECTS\University Treasure Hunt\app\src\main\AndroidManifest.xml:24:9-27:59
 	android:label

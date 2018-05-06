@@ -14,6 +14,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  * Created by sibghat on 4/1/2018.
@@ -27,12 +28,14 @@ public class JsonFileReader {
         this.context = context;
     }
 
+    // generic function to check if a file is present at a location
     public boolean isFilePresent(Context context, String fileName) {
         String path = Environment.getExternalStorageDirectory()+"/"+context.getString(R.string.app_name)+"/"+ fileName + ".json";
         File file = new File(path);
         return file.exists();
     }
 
+    //Check if stages are present in the stages folder
     public boolean isStagesPresent(String folderName){
         String path = Environment.getExternalStorageDirectory()+"/"+context.getString(R.string.app_name)+"/"+ folderName;
         File file = new File(path);
@@ -53,7 +56,8 @@ public class JsonFileReader {
         }
     }
 
-    public void readStages() throws JSONException {
+    // Reading all stages files from stages folder containing jason data
+    public ArrayList<String> getStagesNames(){
 
         File folder = new File(Environment.getExternalStorageDirectory()+ "/", context.getString(R.string.app_name)+"/stages");
         if(!folder.exists()) {
@@ -64,43 +68,93 @@ public class JsonFileReader {
 
         String path = Environment.getExternalStorageDirectory()+"/"+context.getString(R.string.app_name)+"/stages";
         File file = new File(path);
-        File[] contents = file.listFiles();
+        ArrayList<String> stageFileNames = new ArrayList<>();
 
-        for(File stage: contents){
-            Log.d(TAG, "readStages: stage:"+stage);
-            readStageDataFromFile(stage);
+        File[] stageFiles = file.listFiles();
+
+        for(File stage: stageFiles){
+            Log.d(TAG, "readStages: stage:"+stage+"|"+"name:"+stage.getName());
+            stageFileNames.add(stage.getName());
+//            readStageDataFromFile(stage);
         }
+        return stageFileNames;
     }
 
-    private JSONObject readStageDataFromFile(File stage) throws JSONException {
-        String data = "";
+
+    // Reading all stages files from stages folder containing jason data
+    public ArrayList<File> getStagesFiles() throws JSONException {
+
+        File folder = new File(Environment.getExternalStorageDirectory()+ "/", context.getString(R.string.app_name)+"/stages");
+        if(!folder.exists()) {
+            folder.mkdirs();
+            boolean result = folder.mkdirs();
+            Log.d("MyActivity", "mkdirs: " + result);
+        }
+
+        String path = Environment.getExternalStorageDirectory()+"/"+context.getString(R.string.app_name)+"/stages";
+        File file = new File(path);
+        ArrayList<File> stageFilesList = new ArrayList<>();
+
+        File[] stageFiles = file.listFiles();
+
+        for(File stage: stageFiles){
+            Log.d(TAG, "readStages: stage:"+stage+"|"+"name:"+stage.getName());
+            stageFilesList.add(stage);
+//            readStageDataFromFile(stage);
+        }
+        return stageFilesList;
+    }
+
+    // Read stage files data which is in json format
+    public JSONObject readStageDataFromFile(String stageName) throws JSONException {
+        String path = Environment.getExternalStorageDirectory() + "/" + context.getString(R.string.app_name )+"/stages";
+        File file = new File(path, stageName);
+//        String data = "";
+        StringBuilder data = new StringBuilder();
+
         try {
-            BufferedReader br = new BufferedReader(new FileReader(stage));
+            BufferedReader br = new BufferedReader(new FileReader(file));
             try {
-                data = br.readLine();
+
+                String line;
+                while ((line = br.readLine()) != null) {
+                    data.append(line);
+                    data.append('\n');
+                }
                 br.close();
+//                data = br.readLine();
+//                Log.d(TAG, "readStageDataFromFile: br.readLine():"+br.readLine());
+//                br.close();
             } catch (NumberFormatException | IOException e) {
                 e.printStackTrace();
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        JSONObject playerJson = new JSONObject(data);
-        Log.d(TAG, "readFromFile: data read from stage file:"+data);
-        return playerJson;
+        Log.d(TAG, "readStageDataFromFile: data read from stage file:"+data);
+        return new JSONObject(data.toString());
+
+
     }
 
+    // Reading player's data from file
     public JSONObject readPlayerDataFromFile() throws JSONException {
         String path = Environment.getExternalStorageDirectory() + "/" + context.getString(R.string.app_name);
         File file = new File(path, "player.json");
-        String data = "";
+        StringBuilder data = new StringBuilder();
+
         try {
             BufferedReader br = new BufferedReader(new FileReader(file));
             try {
-                data = br.readLine();
+                String line;
+                while ((line = br.readLine()) != null) {
+                    data.append(line);
+                    data.append('\n');
+                }
                 br.close();
             } catch (NumberFormatException | IOException e) {
                 e.printStackTrace();
+
             }
         } catch (FileNotFoundException e) {
 //            try {
@@ -110,7 +164,7 @@ public class JsonFileReader {
 //            }
             e.printStackTrace();
         }
-        JSONObject playerJson = new JSONObject(data);
+        JSONObject playerJson = new JSONObject(data.toString());
         Log.d(TAG, "readFromFile: data read from player file:"+data);
         return playerJson;
     }

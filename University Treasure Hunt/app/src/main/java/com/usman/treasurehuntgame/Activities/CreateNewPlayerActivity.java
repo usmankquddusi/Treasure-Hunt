@@ -11,6 +11,9 @@ import com.airbnb.lottie.LottieAnimationView;
 import com.usman.treasurehuntgame.Classes.JsonFileWriter;
 import com.usman.treasurehuntgame.R;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.Random;
 
 import spencerstudios.com.bungeelib.Bungee;
@@ -50,7 +53,21 @@ public class CreateNewPlayerActivity extends BaseActivity {
                     Toast.makeText(getBaseContext(),"Enter your name!",Toast.LENGTH_SHORT).show();
                 }else {
                     jsonFileWriter = new JsonFileWriter(CreateNewPlayerActivity.this);
-                    if(jsonFileWriter.writePlayerObjectFile(name+randomNumber)){
+
+                    JSONObject playerJsonObject = new JSONObject();
+                    try {
+                        playerJsonObject.put("name", name+randomNumber);
+                        playerJsonObject.put("age", 0);
+                        playerJsonObject.put("score", 0);
+                    } catch (JSONException e1) {
+                        // TODO Auto-generated catch block
+                        e1.printStackTrace();
+                    }
+
+                    String json = null;
+                    json = playerJsonObject.toString();
+
+                    if(jsonFileWriter.writePlayerObjectFile(json)){
                         startActivity(new Intent(CreateNewPlayerActivity.this,LevelSelectionActivity.class));
                         Bungee.fade(CreateNewPlayerActivity.this);
 //                        lottieAnimationView.playAnimation();

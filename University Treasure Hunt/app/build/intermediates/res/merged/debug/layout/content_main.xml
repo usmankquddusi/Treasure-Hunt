@@ -9,38 +9,49 @@
     tools:showIn="@layout/activity_main"
     android:orientation="vertical">
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:orientation="vertical"
+        android:layout_marginBottom="5dp"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp">
+        >
+
         <FrameLayout
             android:layout_width="70dp"
             android:layout_height="match_parent"
-            android:layout_centerHorizontal="true"
             android:layout_below="@+id/textView6"
+            android:layout_centerHorizontal="true"
             android:layout_gravity="center">
 
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/eyeblink_left_animation_view"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            app:lottie_autoPlay="true"
-            app:lottie_fileName="eye_blinking.json"
-            app:lottie_loop="true"
-            android:layout_gravity="left"/>
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/eyeblink_left_animation_view"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="eye_blinking.json"
+                app:lottie_loop="true" />
 
             <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/eyeblink_right_animation_view"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
+                android:layout_gravity="right"
                 app:lottie_autoPlay="true"
                 app:lottie_fileName="eye_blinking.json"
-                app:lottie_loop="true"
-                android:layout_gravity="right"/>
+                app:lottie_loop="true" />
         </FrameLayout>
-    </LinearLayout>
+
+        <TextView
+            android:id="@+id/score_tv"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -55,26 +66,27 @@
             app:cardElevation="10dp"
             app:cardUseCompatPadding="true">
 
-            <TextView
-                android:id="@+id/textView"
+            <com.usman.treasurehuntgame.Classes.TypeWriter
+                android:id="@+id/question_tv"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:padding="3dp"
-                android:text="Question" />
+                android:padding="10dp"
+                android:text=""
+                android:textSize="18sp" />
+
         </android.support.v7.widget.CardView>
 
     </LinearLayout>
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="horizontal"
         android:padding="10dp">
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/answer_edittext"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
             android:layout_gravity="center"
@@ -82,9 +94,17 @@
             android:background="@drawable/edittext_bg"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Enter Answer"
+            android:hint="Enter Answer"
             android:textAlignment="center" />
-    </LinearLayout>
+
+        <TextView
+            android:id="@+id/hint_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hint?"
+            android:textSize="18sp" />
+
+    </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -93,7 +113,7 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/submit_btn"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
