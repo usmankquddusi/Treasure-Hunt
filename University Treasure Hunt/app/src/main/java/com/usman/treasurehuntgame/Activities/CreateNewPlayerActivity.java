@@ -69,6 +69,7 @@ public class CreateNewPlayerActivity extends BaseActivity {
 
                     if(jsonFileWriter.writePlayerObjectFile(json)){
                         startActivity(new Intent(CreateNewPlayerActivity.this,LevelSelectionActivity.class));
+                        finish();
                         Bungee.fade(CreateNewPlayerActivity.this);
 //                        lottieAnimationView.playAnimation();
 //                        new Handler().postDelayed(new Runnable() {

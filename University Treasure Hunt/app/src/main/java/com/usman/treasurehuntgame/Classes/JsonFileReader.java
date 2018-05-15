@@ -71,13 +71,15 @@ public class JsonFileReader {
         ArrayList<String> stageFileNames = new ArrayList<>();
 
         File[] stageFiles = file.listFiles();
-
-        for(File stage: stageFiles){
-            Log.d(TAG, "readStages: stage:"+stage+"|"+"name:"+stage.getName());
-            stageFileNames.add(stage.getName());
+        if(stageFiles != null) {
+            for (File stage : stageFiles) {
+                Log.d(TAG, "readStages: stage:" + stage + "|" + "name:" + stage.getName());
+                stageFileNames.add(stage.getName());
 //            readStageDataFromFile(stage);
+            }
         }
         return stageFileNames;
+
     }
 
 

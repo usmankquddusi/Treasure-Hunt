@@ -54,6 +54,7 @@ public class BaseActivity extends AppCompatActivity {
     void checkPlayerDataPresent(){
         if(!jsonFileReader.isFilePresent(this,getString(R.string.player_data))){
             startActivity(new Intent(BaseActivity.this, CreateNewPlayerActivity.class));
+            finish();
             Bungee.diagonal(this);
         }else{
             try {

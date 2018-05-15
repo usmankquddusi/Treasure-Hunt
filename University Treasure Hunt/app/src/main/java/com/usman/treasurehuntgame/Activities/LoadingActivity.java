@@ -1,10 +1,14 @@
 package com.usman.treasurehuntgame.Activities;
 
+import android.Manifest;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
@@ -12,6 +16,7 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Environment;
 import android.os.Handler;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -44,8 +49,12 @@ public class LoadingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loading);
-        registerLocalBroadcastReceiver();
+        askForPermission();
 
+
+    }
+
+    void startMenuActivity(){
         if(isInternetConnected()){
             new FirebaseHandler(this).checkAndDownloadNewStage(new JsonFileReader(this).getStagesNames());
 
@@ -80,7 +89,6 @@ public class LoadingActivity extends AppCompatActivity {
             }, 5000);
         }
     }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -258,5 +266,51 @@ public class LoadingActivity extends AppCompatActivity {
 
         }
 
+    }
+
+
+    private void askForPermission() {
+        String[] permissions = new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                Manifest.permission.READ_EXTERNAL_STORAGE};
+        ActivityCompat.requestPermissions(this, permissions, 1);
+    }
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        if (requestCode == 1) {
+            for (int i = 0; i < permissions.length; i++) {
+                String permission = permissions[i];
+                int grantResult = grantResults[i];
+
+                if (permission.equals(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+                    if (grantResult == PackageManager.PERMISSION_GRANTED) {
+                        registerLocalBroadcastReceiver();
+                        startMenuActivity();
+                    } else {
+                        new AlertDialog.Builder(this).setMessage("Application needs to have Write Storage permission to work properly!")
+                                .setCancelable(false)
+                                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        dialog.dismiss();
+                                        askForPermission();
+                                    }
+                                })
+                                .setNegativeButton("Close", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        dialog.dismiss();
+                                        finishAffinity();
+                                        System.exit(0);
+                                    }
+                                }).show();
+//                        Snackbar.make(this.getCurrentFocus(),"Application needs to have Write Storage permission to work properly!",Snackbar.LENGTH_INDEFINITE)
+//                                .setAction("Action", null).show();
+                    }
+                }
+
+            }
+        }
     }
 }

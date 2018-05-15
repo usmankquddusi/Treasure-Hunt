@@ -1,10 +1,11 @@
 package com.usman.treasurehuntgame.Activities;
 
 import android.Manifest;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import android.view.View;
@@ -88,8 +89,25 @@ public class LevelSelectionActivity extends BaseActivity {
                     if (grantResult == PackageManager.PERMISSION_GRANTED) {
                         checkPlayerDataPresent();
                     } else {
-                        Snackbar.make(this.getCurrentFocus(),"Application needs to have Write Storage permission to work properly!",Snackbar.LENGTH_INDEFINITE)
-                                .setAction("Action", null).show();
+                        new AlertDialog.Builder(this).setMessage("Application needs to have Write Storage permission to work properly!")
+                                .setCancelable(false)
+                                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        dialog.dismiss();
+                                        askForPermission();
+                                    }
+                                })
+                                .setNegativeButton("Close", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        dialog.dismiss();
+                                        finishAffinity();
+                                        System.exit(0);
+                                    }
+                                }).show();
+//                        Snackbar.make(this.getCurrentFocus(),"Application needs to have Write Storage permission to work properly!",Snackbar.LENGTH_INDEFINITE)
+//                                .setAction("Action", null).show();
                     }
                 }
 
