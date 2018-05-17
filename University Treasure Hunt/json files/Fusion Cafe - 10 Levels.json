@@ -1,0 +1,53 @@
+{"questions_list":[
+		{
+					"question": "1 score for every right answer. Best way to get to this cafe is through Uganda st 'Deakin College'. Enter the gate number to enter Deakin college",
+					"hint": "Uganda st'.",
+					"answer": "3"
+				},
+		{
+					"question": "Well done! Now that you have entered Deakin College make your way to Fusion cafe by passing between building LA and building? Enter the building number/alphabet opposite to building LA.",
+					"hint": "2 Alphabets only 'first albhabet is L'.",
+					"answer": "lb"
+				},
+		{
+					"question": "Too easy! I hope you have found the Beautiful Fusion cafe by now. Enter the cafe and look for displaying food next to the counter. How many type of chicken sandwiches do you see?",
+					"hint": "A complete section of chicken sandwiches on the left corner'.",
+					"answer": "7"
+				},
+		{
+					"question": "That is right. Find a sandwich 'Avacado Roti' and enter the price with a dollar sign",
+					"hint": "Chicken sandwich section'.",
+					"answer": "$9"
+				},
+		{
+					"question": "Spot on! Move forward down to find a fire extinguisher and enter the 9 alphanumeric serial number?",
+					"hint": "Sticker behind the fire extinguisher '.",
+					"answer": "1694b3888"
+				},
+		{
+					"question": "That was a bit tricky one, You nailed it! As you entered the cafe you must have noticed the fancy sitting infront of the window on your right and left. How many chairs in total are placed in this section?",
+					"hint": "This is the only glass sitting area in the cafe.",
+					"answer": "16"
+				},
+		{
+					"question": "Well done! Sit on the most left chair of the glass sitting area. What sport field do you see? Cricket? Football? or Basketball field?",
+					"hint": "A square field covered with astrofield.",
+					"answer": "football"
+				},		
+		{
+					"question": "Clever! A coffe machine right behind where you saw the football field from. What does the coffe machine say?",
+					"hint": "2 words asnwer and one of them is coffe '.",
+					"answer": "Go Coffe"
+				},		
+		{
+					"question": "Coffe eye! Head right and move forward and look for rest rooms. Did you find any stairs to reach the rest room? Enter YES or NO",
+					"hint": "Look for signs indicating TOILETS'.",
+					"answer": "YES"
+				},
+		{
+					"question": "Great! As you walk down the stairs to enter rest rooms. Look for door that says 'unisex'. Get in there and find a wall Hand dryer. Enter the special 5 digit serial number on the dryer ",
+					"hint": "Focus on the word DIGITS '.",
+					"answer": "33363"
+				}		
+	]
+}

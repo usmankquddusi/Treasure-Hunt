@@ -17,9 +17,6 @@ import com.usman.treasurehuntgame.R;
 
 import spencerstudios.com.bungeelib.Bungee;
 
-/**
- * Created by sibghat on 4/15/2018.
- */
 
 public class BaseActivity extends AppCompatActivity {
 

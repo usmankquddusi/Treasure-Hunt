@@ -1,8 +1,5 @@
 package com.usman.treasurehuntgame.Models;
 
-/**
- * Created by sibghat on 4/29/2018.
- */
 
 public class ScoreObj {
     String name,age;

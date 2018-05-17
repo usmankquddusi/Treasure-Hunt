@@ -7,9 +7,6 @@ import android.net.ConnectivityManager;
 import android.util.Log;
 import android.widget.Toast;
 
-/**
- * Created by sibghat on 4/22/2018.
- */
 
 public class CheckConnectivity extends BroadcastReceiver {
 

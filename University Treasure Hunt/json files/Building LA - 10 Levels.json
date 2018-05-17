@@ -1,0 +1,53 @@
+{"questions_list":[
+		{
+					"question": "1 score for every right answer. Enter through uganda st. The first building on your left is the building LA. Before you enter the building what is the obvious sign you can see here?",
+					"hint": "University map might be handy to find this building'.",
+					"answer": "No smoking"
+				},
+		{
+					"question": "Well done! Now that you have entered building LA you are on Level 2. It has lecture rooms all around. Can you enter the right number of rooms?  .",
+					"hint": "This floor is structured in a square shape, make sure you complete the round.'.",
+					"answer": "12"
+				},
+		{
+					"question": "That was quick! Look for instructions on the same floor and find reception. Enter the reception floor number",
+					"hint": "This building has 4 floors and I heard reception is on the top floor.",
+					"answer": "4"
+				},
+		{
+					"question": "That is right. Go up to reception and look for forms on your left. Find a form which says 'peer mentoring'. Who do peer mentors are assigned to help?",
+					"hint": "Check the third paragraph on one of the pages to find this out'.",
+					"answer": "New students"
+				},
+		{
+					"question": "You are smart! Leave the form area and look for 'staff lockers'. How many lockers can you count in total?",
+					"hint": "Settle down, you may find lockers just around reception. No other lockers on this floor'.",
+					"answer": "65"
+				},
+		{
+					"question": "Take an elevator to ground '1st' floor. Enter the elevator emergency number.",
+					"hint": "Its a small elevator look for 'emergency call'.",
+					"answer": "1800 062 579"
+				},
+		{
+					"question": "Well done! Now that you are on the 1st floor. Find a lab 'LA1.02'. Enter the total number of computers in this room",
+					"hint": "Under stairs.",
+					"answer": "32"
+				},		
+		{
+					"question": "Spot on! Does this room have a projector? If yes, how many?",
+					"hint": "one digit answer'.",
+					"answer": "1"
+				},		
+		{
+					"question": "wohoo! Get out of this room and head straight to take a left. Now you see some comfortable personal spaces for students with computers provided. How many IT help desks do you see here?",
+					"hint": "Opposite Bupa'.",
+					"answer": "1"
+				},
+		{
+					"question": "Great! Get this right and you will clear yet another stage. Head straight to follow emergency exit signs. Take an exit door to go down. What do you see right after exiting this building?",
+					"hint": "One of the 'stages' name '.",
+					"answer": "fusion cafe"
+				}		
+	]
+}

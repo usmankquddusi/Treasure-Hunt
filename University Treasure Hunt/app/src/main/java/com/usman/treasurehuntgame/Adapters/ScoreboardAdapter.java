@@ -13,9 +13,6 @@ import com.usman.treasurehuntgame.R;
 
 import java.util.ArrayList;
 
-/**
- * Created by sibghat on 4/29/2018.
- */
 
 public class ScoreboardAdapter extends ArrayAdapter<ScoreObj> {
     public ScoreboardAdapter(Context context, ArrayList<ScoreObj> scoreObj) {

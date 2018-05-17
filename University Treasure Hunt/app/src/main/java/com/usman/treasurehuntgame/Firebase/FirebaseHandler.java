@@ -23,9 +23,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Set;
 
-/**
- * Created by sibghat on 4/22/2018.
- */
 
 public class FirebaseHandler {
 

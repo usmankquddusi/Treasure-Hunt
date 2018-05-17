@@ -14,9 +14,6 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.Writer;
 
-/**
- * Created by sibghat on 4/1/2018.
- */
 
 public class JsonFileWriter extends JSONObject {
     private static String TAG = "JsonFileWriter";

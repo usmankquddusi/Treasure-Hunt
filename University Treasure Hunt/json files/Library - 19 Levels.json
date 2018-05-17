@@ -1,0 +1,98 @@
+{"questions_list":[
+		{
+					"question": "1 score for every right answer. Enter Deakin University through Burwood Highway. Find a legal parking in the parking space provided. Before you do anything you do know this parking is paid 8:30AM-4:30PM MON-FRI. Do you know the name of the application that is used to pay parking? Enter application name",
+					"hint": "Find instructions in the area.",
+					"answer": "cellopark AU"
+				},
+		{
+					"question": "Well done! Before you leave parking area and head to your next hunt. Can you tell me how many floors of parking are here?",
+					"hint": "It is sometimes good to come out of the place to see the wide angle of the area.",
+					"answer": "5"
+				},
+		{
+					"question": "You got that right! Now that you are out of the parking area you will see a University map. Look for the Library and enter the library number/alphabet",
+					"hint": "Sometimes main entrances says it all.",
+					"answer": "v"
+				},
+		{
+					"question": "Spot on! Now that you have enterened the library look for Help desk and ask for Quiet Area floor. Enter the floor number of Quite Area",
+					"hint": "This is pretty straight forward. isn't it.",
+					"answer": "1"
+				},
+		{
+					"question": "You are good! Now that you are in the quiet area look for Book trolley area. Enter the total number of trolley lined up",
+					"hint": "First group study room on the left is the best place to study.",
+					"answer": "16"
+				},
+		{			
+					"question": "Well done! Let's test your memory further. Do you remember how many stairs you jumped down to get to quiet area? Enter the number of stairs",
+					"hint": "I would go back where I started from.",
+					"answer": "19"
+				},
+		{			
+					"question": "Wohoo awesome! Find a book MORAL VISION by DUANE L.CADY. Now that you have found the right book, enter the total number of pages this book holds?",
+					"hint": "Book Shelf 184/SIN/HOG.",
+					"answer": "117"		
+		        },
+		{			
+					"question": "Great! Head straight through 184/SIN/HOG you will find personal study space for students to get their laptop's to study on desks. Enter the number of spaces you see",
+					"hint": "Follow emergency exit signs through 184/SIN/HOG.",
+					"answer": "25"		
+		        },
+		{			
+					"question": "Awesome! Find more personal study area. Head right at the end of this 'previous question' study area. This place is huge, enter the number of spaces you see",
+					"hint": "Follow through shelf 364.36 OMO/RN.",
+					"answer": "112"
+		        },				
+		{			
+					"question": "Bullseye! Now that you have answered the previous question. Take a right at the end of the study area look for book shelfs with stairings. Enter the amount of stairings you see",
+					"hint": "These are the only Car like stairings in the entire Library.",
+					"answer": "9"
+		        },	
+		{			
+					"question": "Nice! Head straight and exit the quiet study area. HANG ON! HANG ON! Before you leave, do you still remember the number of stairs you jumped down? Enter the number of stairs",
+					"hint": "They will be the same as you climb up.",
+					"answer": "19"
+		        },	
+		{			
+					"question": "You are smart! Now that you are back from where you started. Look for the area 'Reserve collection' Enter the total number of rows on shelves you can see here",
+					"hint": "Help desks are always helpful",
+					"answer": "10"
+		        },			
+		{			
+					"question": "Going well! Head straight from reserve collection and look for stand alone computers. Enter the total stand alone computers you see",
+					"hint": "Opposite 'Safezone' board.",
+					"answer": "16"
+		        },	
+		{			
+					"question": "Almost there! Head straight from safetyzone area. Now you will see large amount of computers with thousands of students. Find and enter total amount of printers in this area",
+					"hint": "Read this carefully! If you find 1 printer you will find them all in the same area.",
+					"answer": "4"
+		        },
+		{			
+					"question": "well done! There are 2 vending machines in the same area as above but since this place is huge you need to look around. Look for 'powepad' vending machine and enter the $ price of '21cm micro USB cable",
+					"hint": "Wide eyes might help. Don't forget the dollar sign before the amount.",
+					"answer": "$10"
+		        },
+		{			
+					"question": "Going well! Look for another vending machine in the same area which is sponsored by 'Mont Franklin' enter the $ amount of the 44th item in the machine.",
+					"hint": "Wide eyes might help. Don't forget the dollar sign before the amount.",
+					"answer": "$3"
+		        },
+		{			
+					"question": "Awesome! Fasten your belts now. I am going to throw a difficult one now. Head straight from mont franklin machine and look for 'wireless zone' sign on one of the walls. If you have found the sign can you tell me the IT service desk number for Melbourne campus which is mentioned on the wallsign",
+					"hint": "Walk slow, you might find your treasure just before you exit the shelf area.",
+					"answer": "46400"
+		        },
+		{			
+					"question": "You are smart! Exit the shelf area from the wireless zone and head straight. There are only limited amount of MACS on this floor. How many MACS do you see?",
+					"hint": "LOOK NOMORE, all MACS are right in this area 'ONLY'.",
+					"answer": "9"
+		        },
+		{			
+					"question": "Last question. You can do this! Remember the 'Safezone' sign board? How many instructions were there? Enter the number",
+					"hint": "Opposite stand alone computers.",
+					"answer": "5"
+		        }		
+	]
+}

@@ -1,0 +1,63 @@
+{"questions_list":[
+		{
+					"question": "1 score for every right answer. Welcome to Building B! Do you know this is the only building that has unique running hours. Enter the number of hours this Building runs",
+					"hint": "Entrance door to this building may help you answer this. There is also a rumour that this building runs all day'.",
+					"answer": "24"
+				},
+		{
+					"question": "Great guess! What is the first thing you see on your left when you enter the building?",
+					"hint": "Helps people move from floor to floor.",
+					"answer": "Elevator"
+				},
+		{
+					"question": "That was as easy as a piece of a cake! Now head straight and you will find 2 ways either left or right. How many labs and lecture theatre are there on this floor in total",
+					"hint": "Watch out there are many doors here and some of them are neither a lab or a theatre. 'Look what the door says'.",
+					"answer": "10"
+				},
+		{
+					"question": "Perfect! Roam around this floor and look for 'staff only' door. Enter the number of this room accurately",
+					"hint": "It is a 'unique colour' door.",
+					"answer": "B2.26"
+				},
+		{
+					"question": "Well done! Let's take stairs upto Level 3. The structure of all levels in this building are the same. Now that you are on level 3 look for door which says 'cleaners store'. Can you tell me the number of this room accurately?",
+					"hint": "This is the only cleaners store in the entire building and is on level 3. ",
+					"answer": "B3.11.01"
+				},
+		{
+					"question": "Smart! Go back to the stairs and head straight. Look for personal lockers for students and staff. Can you count and enter the number of lockers in total?",
+					"hint": "As you took stairs to level 3 and entered this floor. Go back to the exact spot and take a right. Easy to find the loakers",
+					"answer": "60"
+				},
+		{
+					"question": "Well done! What is the number of the last locker? Enter the number",
+					"hint": "Wondering which is the last locker? Bottom last locker on your right hand side'.",
+					"answer": "200"
+				},		
+		{
+					"question": "I knew you would do it. Great! Walk down straight from the lockers to find printing machine. What is the first sentence under 'printer instructions'.",
+					"hint": "Answer consists of only 5 words.",
+					"answer": "swipe your card to login"
+				},		
+		{
+					"question": "Spot on! Walk the opposite side to printers to cross lockers. Look for a room full of MACS 'MAC LAB'. Enter the number of MACS you see in this lab",
+					"hint": "This is the only MAC lab on this floor.",
+					"answer": "27"
+				},		
+		{
+					"question": "Awesome! Let's go back to the stairs and climb to level 4. This is not a complicated floor so I won't direct you here. Look for the lecture theatre which says 'Bachelor of Nursing' only. What is the number of this theatre.",
+					"hint": "Look for 'Bachelors of Nursing'. '1 digit answer'",
+					"answer": "6"
+				},		
+		{
+					"question": "Great mind! Just around Bachelor of Nursing theatre there is a lab and it has a computer with a unique 'DPN number' sticker on one the monitors. Find the computer and fill in the missing digit 'DPN4_705'",
+					"hint": "Like I said in the question 'it is a digit'.",
+					"answer": "0"
+				},
+		{
+					"question": "Well done, You are just one answer away to finish this stage! Let me test your observation when you made your way upto level 4. Find a piece of art hanging on the wall and name the artist",
+					"hint": "Read the question again 'when you made your way upto level 4'.",
+					"answer": "Noela Stratford"
+				}		
+	]
+}
